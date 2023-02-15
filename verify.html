@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Train Ticket Booking</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<h1>Verification Page</h1>
+		<div class="container">
+			<div class="form">
+				<form>
+					<div class="moverall">
+						<div class="row tooltip">
+							<label for="password" class="label">Password</label>
+							<input type="password" name="password" id="password" class="input" onkeyup="matchPassword()" oninput="this.setCustomValidity('')" required />
+							<span class="tooltiptext"><b>Must include:</b><br>A lowercase<br>A uppercase<br>A number<br>Min 8 & Max 12 characters</span>
+						</div>
+						<div class="row tooltip">
+							<label for="repassword" class="label">Confirm Password</label>
+							<input type="password" name="repassword" id="repassword" class="input" onkeyup="matchRePass()" oninput="this.setCustomValidity('')" required />
+							<span class="tooltiptext"><b>Password did not match</b></span>
+						</div>
+					</div>
+					<button type="submit" id="verify">Verify</button>
+				</form>
+			</div>
+		</div>
+		<script src="./src/verify.js"></script>
+	</body>
+</html>	

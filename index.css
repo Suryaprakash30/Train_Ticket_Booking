@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+	font-family: 'Poppins';
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+h1 {
+	color: white;
+}
+
+.container {
+	background: #fff;
+	max-width: 700px;
+	width: 100%;
+	padding: 25px 30px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 0 rgba(42, 45, 48, 0.12);
+}
+
+.overall {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dateCount {
+	justify-content: space-around;
+}
+
+.row {
+	width: 45%;
+	margin-bottom: 15px;
+}
+
+.brow {
+	width: 22%;
+	margin-bottom: 15px;
+}
+
+.mrow {
+	width: 30%;
+	margin-bottom: 15px;
+}
+
+.label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.role {
+	padding-top: 2%;
+}
+
+.master {
+	padding-right: 15%;
+}
+
+.input {
+	padding: 13px;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-bottom-width: 2px;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.input:focus {
+	outline: none;
+	box-shadow: inset 2px 2px 5px 0 rgba(42, 45, 48, 0.12);
+}
+
+.input::placeholder {
+	color: #D3D3D3;
+}
+
+.tooltip {
+	position: relative;
+}
+
+.tooltiptext {
+	visibility: hidden;
+	width: 100%;
+	background-color: #D3D3D3;
+	color: indianred;
+	text-align: center;
+	font-size: 13px;
+	padding: 5px 0;
+	border-radius: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 0%;
+}
+
+.logout {
+	color: white;
+	position: absolute;
+	right: 2%;
+	padding: 1%;
+}
+
+.welcome {
+	color: white;
+	font-weight: normal;
+	position: absolute;
+	left: 1%;
+	padding: 1%;
+	margin: 0;
+}
+
+span b {
+	color: red;
+}
+
+button {
+	width: 100%;
+	font-size: 18px;
+	padding: 15px;
+	margin-top: 15px;
+	color: #fff;
+	border: none;
+	border-radius: 100px;
+	background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.brow button {
+	margin-top: 0;
+}
+
+button:hover {
+	background: linear-gradient(-135deg, #71b7e6, #9b59b6)
+}
+
+h4 {
+	text-align: center;
+}
+
+.addPassenger {
+	color: -webkit-link;
+    cursor: pointer;
+	margin: 0;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modalContent {
+	background-color: #fff;
+	margin: auto;
+	padding: 20px;
+	width: 50%;
+	border-radius: 5px;
+}
+
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover {
+	color: #000;
+	cursor: pointer;
+}
+
+h2 {
+	text-align: center;
+	background: -webkit-linear-gradient(#71b7e6, #9b59b6);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#gridTable {
+	margin: auto;
+	padding-top: 25px;
+	user-select: none;
+}
+
+.reference {
+	margin: 10px auto 0 auto;
+}
+
+/* #gridTable td {
+	border: 1px solid;
+    width: 80px;
+	text-align: center;
+} */
+
+.seatAvailable {
+	background: url(./images/available.png) no-repeat;
+}
+
+.seatTaken {
+	background: url(./images/taken.png) no-repeat;
+}
+
+.seatSelected {
+	background: url(./images/selected.png) no-repeat;
+}
+
+.seat {
+	text-align: center;
+    min-width: 24px;
+    min-height: 24px;
+    padding: 5px 8px;
+	height: 30px;
+    font-size: 14px;
+    color: #757575;
+    background-size: 38px;
+}
+
+.table table {
+	width: 80%;
+	margin: auto;
+	border-collapse: collapse;
+}
+
+.table th, .table td {
+	border-bottom: 1px solid black;
+	padding-right: 10px;
+}
+
+.table tr:hover {
+	background-color: #D6EEEE;
+}
+
+.table {
+	overflow: auto;
+    height: 40vh;
+}
+
+.bookingForm {
+	overflow: auto;
+    height: 42vh;
+}
+
+.delIcon {
+	color: red;
+	text-align: center;
+}
+
+.overall .delIcon {
+	color: red;
+	margin-top: 40px;
+}
+
+.moverall {
+	display: flex;
+    flex-wrap: wrap;
+	flex-direction: column;
+    align-content: center;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	float: left;
+	width: 20%;
+	border-bottom: 3px solid transparent;
+}
+
+li.active {
+	border-color: #ffc107;
+}
+
+.active .daylink{
+	color: #ffc107;
+}
+
+.daylink {
+	color: #551A8B;
+	text-align: center;
+}
+
+.day, .date {
+	display: block;
+}
+
+@media(max-width: 800px) {
+	.container {
+		max-width: 95%;
+	}
+	.modalContent {
+		width: 80%;
+	}
+}
+
+@media(max-width: 675px) {
+	button, ul {
+		font-size: 14px;
+	}
+}
+
+@media(max-width: 575px){
+	.welcome{
+		padding-top: 0;
+	}
+	.row {
+		margin-bottom: 15px;
+		width: 80%;
+	}
+	.brow {
+		width: 30%;
+	}
+	button, ul {
+		font-size: 11px;
+	}
+	.bookingForm {
+		height: 52vh;
+	}
+}
+
+@media(max-width: 400px){
+	.brow.book {
+		width: 45%;
+	}
+	.name {
+		width: 35%;
+	}
+	.age {
+		width: 19%;
+	}
+	.gender {
+		width: 37%;
+	}
+	.seat {
+		min-width: 17px;
+		padding: 4px 8px;
+		font-size: 11px;
+		background-size: 30px;
+		height: 24px;
+	}
+}			

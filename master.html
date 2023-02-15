@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Master & Student Task Executor</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<a href="index.html" class="logout">Logout</a>
+		<h1>You tell, I do</h1>
+		<div class="container">
+			<form>
+				<div class="overall">
+					<div class="mrow">
+						<label for="first" class="label">Num 1</label>
+						<select name="first" id="first" class="input" oninput="this.setCustomValidity('')" required >
+							<option value="">Select a value</option>
+							<option value="zero">0</option>
+							<option value="one">1</option>
+							<option value="two">2</option>
+							<option value="three">3</option>
+							<option value="four">4</option>
+							<option value="five">5</option>
+							<option value="six">6</option>
+							<option value="seven">7</option>
+							<option value="eight">8</option>
+							<option value="nine">9</option>
+						</select>
+					</div>
+					<div class="mrow">
+						<label for="operator" class="label">Operation</label>
+						<select name="operator" id="operator" class="input" oninput="this.setCustomValidity('')" required >
+							<option value="">Select a operator</option>
+							<option value="plus">Add</option>
+							<option value="minus">Subtract</option>
+							<option value="times">Multiply</option>
+							<option value="divided_by">Divide</option>
+						</select>
+					</div>
+					<div class="mrow">
+						<label for="second" class="label">Num 2</label>
+						<select name="second" id="second" class="input" oninput="this.setCustomValidity('')" required >
+							<option value="">Select a value</option>
+							<option value="zero">0</option>
+							<option value="one">1</option>
+							<option value="two">2</option>
+							<option value="three">3</option>
+							<option value="four">4</option>
+							<option value="five">5</option>
+							<option value="six">6</option>
+							<option value="seven">7</option>
+							<option value="eight">8</option>
+							<option value="nine">9</option>
+						</select>
+					</div>
+				</div>
+				<div class="mbuttons">
+					<button type="submit" id="clear" class="mbutton">Clear</button>
+					<button type="submit" id="calculate" class="mbutton">Calculate</button>
+				</div>
+			</form>
+			<p></p>
+		</div>
+		<script src="./src/master.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+

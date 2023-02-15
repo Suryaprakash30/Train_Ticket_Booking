@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Train Ticket Booking</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<h1>Account Details</h1>
+		<div class="container">
+			<div class="form">
+				<form>
+					<div class="overall">
+						<div class="row">
+							<label for="phone" class="label">Phone Number</label>
+							<input type="tel" name="phone" id="phone" class="input" placeholder="excluding Country code" autocomplete="off" maxlength="10" pattern="^\d{10}$" oninvalid="this.setCustomValidity('Enter only 10 digits')" oninput="this.setCustomValidity('')" required />
+						</div>
+						<div class="row">
+							<label for="dob" class="label">Date of Birth</label>
+							<input type="date" name="dob" id="dob" class="input" required />
+						</div>
+						<div class="row">
+							<label for="address" class="label">Address</label>
+							<textarea name="address" id="address" class="input" oninput="this.setCustomValidity('')" required></textarea>
+						</div>
+						<div class="row">
+							<label for="image" class="label">Profile Picture</label>
+							<input type="file" name="image" id="image" accept="image/*" oninput="this.setCustomValidity('')" required />
+						</div>
+					</div>
+					<button type="submit" id="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+		<script src="./src/accountdetails.js"></script>
+	</body>
+</html>
